@@ -18,14 +18,12 @@ body {
 #canvas {
   background-image: url("bg.jpg");
   height: 2240px;
-  margin: 0;
   background-position: center;
   background-repeat: no-repeat;
   opacity: .4;
 }
-.backgroundimage {
-  height: auto;
-}
+
+
 
 /* image responsiveness */
 @media screen and (max-width:600px) {
@@ -42,8 +40,8 @@ body {
   align-items: stretch;
   height: 100px;
   width: 400px;
-  position: absolute;
-  right: 200px;
+  position: relative;
+  left: 1200px;
   top: 7px;
   margin: 1px 1px;
   border-left-style: groove;
@@ -57,12 +55,32 @@ i {
   margin: 5px;
 }
 
+/* subscribe div */
 #subscribe {
   width: 200px;
   height: 70px;
   position: relative;
-  left: 1050px;
+  left: 900px;
   top: 11px;
   position: absolute;
+}
 
+/* button div */
+.buttons {
+  height: 100px;
+  width: 1200px;
+  position: relative;
+  left: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  top: 35px;
+  margin: 0 1px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border-bottom: solid 5px;
+  width: 250px;
+  height: 55px;
 }
